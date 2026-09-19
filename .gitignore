@@ -1,0 +1,11 @@
+# Internal working docs — not for the public repo
+PROJECT_SHEET.md
+DRAYKE-QUESTIONS.md
+POST-APPROVAL-TODO.md
+
+# Utility scripts (kept local, not deployed)
+remove-bg.py
+
+# OS junk
+.DS_Store
+Thumbs.db
