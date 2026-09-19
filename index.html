@@ -237,8 +237,14 @@
     border:1px solid rgba(46,122,255,0.5);border-radius:8px;
     font-weight:700;font-size:0.88rem;letter-spacing:0.02em;
     transition:background .2s, color .2s;
+    white-space:nowrap;
   }
   .card-cta:hover{background:var(--blue);color:#fff}
+  .card-head{
+    display:flex;align-items:flex-start;justify-content:space-between;
+    gap:12px;margin-bottom:6px;flex-wrap:wrap;
+  }
+  .card-cta-top{margin-top:0;padding:8px 14px;font-size:0.82rem}
 
   /* PORTFOLIO */
   .portfolio{background:#000}
@@ -571,7 +577,10 @@
     <div class="grid-2">
 
       <div class="card">
-        <h3>Exterior Wash</h3>
+        <div class="card-head">
+          <h3>Exterior Wash</h3>
+          <a href="https://web.detailconnect.app/u=draykes-mobile-detailing--KCKHCL" target="_blank" rel="noopener" class="card-cta card-cta-top">Book &rarr;</a>
+        </div>
         <div class="tagline">Restore. Protect. Shine.</div>
         <div class="tier">
           <span class="tier-badge">Basic</span>
@@ -581,11 +590,13 @@
           <span class="tier-badge">Premium</span>
           <div class="tier-meta"><span class="tier-price">$100&ndash;$120</span><span class="tier-time">120 min</span></div>
         </div>
-        <a href="https://web.detailconnect.app/u=draykes-mobile-detailing--KCKHCL" target="_blank" rel="noopener" class="card-cta">Book Exterior &rarr;</a>
       </div>
 
       <div class="card">
-        <h3>Interior Clean</h3>
+        <div class="card-head">
+          <h3>Interior Clean</h3>
+          <a href="https://web.detailconnect.app/u=draykes-mobile-detailing--KCKHCL" target="_blank" rel="noopener" class="card-cta card-cta-top">Book &rarr;</a>
+        </div>
         <div class="tagline">Clean. Fresh. Comfortable.</div>
         <div class="tier">
           <span class="tier-badge">Basic</span>
@@ -595,11 +606,13 @@
           <span class="tier-badge">Premium</span>
           <div class="tier-meta"><span class="tier-price">$130&ndash;$150</span><span class="tier-time">180 min</span></div>
         </div>
-        <a href="https://web.detailconnect.app/u=draykes-mobile-detailing--KCKHCL" target="_blank" rel="noopener" class="card-cta">Book Interior &rarr;</a>
       </div>
 
       <div class="card">
-        <h3>Full Detail</h3>
+        <div class="card-head">
+          <h3>Full Detail</h3>
+          <a href="https://web.detailconnect.app/u=draykes-mobile-detailing--KCKHCL" target="_blank" rel="noopener" class="card-cta card-cta-top">Book &rarr;</a>
+        </div>
         <div class="tagline">Inside &amp; Out. Complete Care.</div>
         <div class="tier">
           <span class="tier-badge">Basic</span>
@@ -609,11 +622,13 @@
           <span class="tier-badge">Premium</span>
           <div class="tier-meta"><span class="tier-price">$180&ndash;$220</span><span class="tier-time">240 min</span></div>
         </div>
-        <a href="https://web.detailconnect.app/u=draykes-mobile-detailing--KCKHCL" target="_blank" rel="noopener" class="card-cta">Book Full Detail &rarr;</a>
       </div>
 
       <div class="card">
-        <h3>Paint Correction</h3>
+        <div class="card-head">
+          <h3>Paint Correction</h3>
+          <a href="https://web.detailconnect.app/u=draykes-mobile-detailing--KCKHCL" target="_blank" rel="noopener" class="card-cta card-cta-top">Book &rarr;</a>
+        </div>
         <div class="tagline">Swirls &amp; Scratches. Gone.</div>
         <div class="tier">
           <span class="tier-badge">1-Step</span>
@@ -623,7 +638,6 @@
           <span class="tier-badge">2-Step</span>
           <div class="tier-meta"><span class="tier-price">$350&ndash;$450</span><span class="tier-time">240 min</span></div>
         </div>
-        <a href="https://web.detailconnect.app/u=draykes-mobile-detailing--KCKHCL" target="_blank" rel="noopener" class="card-cta">Book Paint Correction &rarr;</a>
       </div>
 
     </div>
