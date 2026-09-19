@@ -50,11 +50,18 @@
     background:var(--blue);color:#fff;font-weight:700;
     padding:10px 18px;border-radius:8px;font-size:0.9rem;
     transition:transform .2s, box-shadow .2s;
+    white-space:nowrap;
   }
   .nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(46,122,255,0.45)}
 
   @media (max-width:720px){
     .nav-links{display:none}
+  }
+  @media (max-width:560px){
+    .nav-brand span b{display:none}
+    .nav-brand span{font-size:1.1rem}
+    .nav-inner{padding:12px 16px;gap:10px}
+    .nav-cta{padding:9px 14px;font-size:0.85rem}
   }
 
   /* HERO */
