@@ -224,6 +224,18 @@
     box-shadow:0 4px 12px rgba(46,122,255,0.35);
   }
   .tier-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .tier-list{
+    list-style:none;color:var(--muted);font-size:0.85rem;
+    margin-top:10px;padding-left:0;
+  }
+  .tier-list li{
+    padding:3px 0;padding-left:18px;position:relative;line-height:1.4;
+  }
+  .tier-list li::before{
+    content:"✓";position:absolute;left:0;top:2px;
+    color:var(--blue);font-weight:900;font-size:0.78rem;
+  }
+  .tier-premium .tier-list li::before{color:var(--blue)}
   .tier-price{color:var(--blue);font-weight:800;font-size:1.15rem}
   .tier-time{
     color:var(--muted);font-size:0.82rem;
@@ -585,10 +597,23 @@
         <div class="tier">
           <span class="tier-badge">Basic</span>
           <div class="tier-meta"><span class="tier-price">$70&ndash;$90</span><span class="tier-time">60 min</span></div>
+          <ul class="tier-list">
+            <li>Hand wash</li>
+            <li>Wheels &amp; tires cleaned</li>
+            <li>Tire shine</li>
+            <li>Glass cleaned</li>
+            <li>Door jambs</li>
+          </ul>
         </div>
         <div class="tier tier-premium">
           <span class="tier-badge">Premium</span>
           <div class="tier-meta"><span class="tier-price">$100&ndash;$120</span><span class="tier-time">120 min</span></div>
+          <ul class="tier-list">
+            <li>Everything in Basic</li>
+            <li>Clay bar decontamination</li>
+            <li>Wax or sealant protection</li>
+            <li>Trim &amp; plastic restoration</li>
+          </ul>
         </div>
       </div>
 
@@ -601,10 +626,24 @@
         <div class="tier">
           <span class="tier-badge">Basic</span>
           <div class="tier-meta"><span class="tier-price">$80&ndash;$100</span><span class="tier-time">120 min</span></div>
+          <ul class="tier-list">
+            <li>Thorough vacuum</li>
+            <li>Seats &amp; carpets cleaned</li>
+            <li>Dashboard &amp; console</li>
+            <li>Door panels</li>
+            <li>Interior windows</li>
+          </ul>
         </div>
         <div class="tier tier-premium">
           <span class="tier-badge">Premium</span>
           <div class="tier-meta"><span class="tier-price">$130&ndash;$150</span><span class="tier-time">180 min</span></div>
+          <ul class="tier-list">
+            <li>Everything in Basic</li>
+            <li>Shampoo / steam cleaning</li>
+            <li>Leather clean &amp; condition</li>
+            <li>Air vents &amp; crevices</li>
+            <li>Odor elimination</li>
+          </ul>
         </div>
       </div>
 
@@ -617,10 +656,22 @@
         <div class="tier">
           <span class="tier-badge">Basic</span>
           <div class="tier-meta"><span class="tier-price">$120&ndash;$140</span><span class="tier-time">180 min</span></div>
+          <ul class="tier-list">
+            <li>Basic exterior wash</li>
+            <li>Basic interior clean</li>
+            <li>Windows in &amp; out</li>
+            <li>Wheels &amp; tires detailed</li>
+          </ul>
         </div>
         <div class="tier tier-premium">
           <span class="tier-badge">Premium</span>
           <div class="tier-meta"><span class="tier-price">$180&ndash;$220</span><span class="tier-time">240 min</span></div>
+          <ul class="tier-list">
+            <li>Premium exterior wash</li>
+            <li>Premium interior clean</li>
+            <li>Engine bay cleaning</li>
+            <li>Ceramic spray protection</li>
+          </ul>
         </div>
       </div>
 
@@ -633,10 +684,22 @@
         <div class="tier">
           <span class="tier-badge">1-Step</span>
           <div class="tier-meta"><span class="tier-price">$300&ndash;$500</span><span class="tier-time">240 min</span></div>
+          <ul class="tier-list">
+            <li>Single machine polish pass</li>
+            <li>Removes light swirls</li>
+            <li>Removes oxidation</li>
+            <li>Gloss restoration</li>
+          </ul>
         </div>
         <div class="tier tier-premium">
           <span class="tier-badge">2-Step</span>
-          <div class="tier-meta"><span class="tier-price">$350&ndash;$450</span><span class="tier-time">240 min</span></div>
+          <div class="tier-meta"><span class="tier-price">$400&ndash;$600</span><span class="tier-time">240 min</span></div>
+          <ul class="tier-list">
+            <li>Compound + polish stages</li>
+            <li>Removes deep scratches</li>
+            <li>Removes heavy swirls</li>
+            <li>Deep gloss restoration</li>
+          </ul>
         </div>
       </div>
 
