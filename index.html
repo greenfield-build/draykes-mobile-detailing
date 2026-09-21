@@ -435,6 +435,20 @@
     .reveal{opacity:1;transform:none;transition:none}
   }
 
+  /* BOOK EMBED */
+  .book{background:var(--panel)}
+  .book-frame-wrap{
+    max-width:900px;margin:0 auto;
+    background:#fff;border:1px solid var(--blue);border-radius:14px;
+    overflow:hidden;box-shadow:0 10px 40px rgba(46,122,255,0.18);
+  }
+  .book-frame-wrap iframe{
+    width:100%;height:1000px;border:0;display:block;
+  }
+  @media (max-width:640px){.book-frame-wrap iframe{height:1200px}}
+  .book-fallback{text-align:center;margin-top:20px;color:var(--muted);font-size:0.9rem}
+  .book-fallback a{color:var(--blue);font-weight:700;text-decoration:underline}
+
   /* SOCIAL */
   .social{background:#000}
   .social-buttons{
@@ -509,11 +523,11 @@
     <nav class="nav-links">
       <a href="#services">Services</a>
       <a href="#portfolio">Portfolio</a>
+      <a href="#book">Book</a>
       <a href="#about">About</a>
-      <a href="#social">Social</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a href="https://web.detailconnect.app/u=draykes-mobile-detailing--KCKHCL" target="_blank" rel="noopener" class="nav-cta">Book Online</a>
+    <a href="#book" class="nav-cta">Book Online</a>
   </div>
 </header>
 
@@ -554,7 +568,7 @@
   </div>
 
   <div class="hero-ctas">
-    <a href="https://web.detailconnect.app/u=draykes-mobile-detailing--KCKHCL" target="_blank" rel="noopener" class="btn btn-primary">Book Online</a>
+    <a href="#book" class="btn btn-primary">Book Online</a>
   </div>
   <div style="margin-top:18px"><span class="hero-cta-badge">Satisfaction guaranteed</span></div>
 </section>
@@ -595,7 +609,7 @@
       <div class="card">
         <div class="card-head">
           <h3>Exterior Wash</h3>
-          <a href="https://web.detailconnect.app/u=draykes-mobile-detailing--KCKHCL" target="_blank" rel="noopener" class="card-cta card-cta-top">Book &rarr;</a>
+          <a href="#book" class="card-cta card-cta-top">Book &rarr;</a>
         </div>
         <div class="tagline">Restore. Protect. Shine.</div>
         <div class="tier-pair">
@@ -626,7 +640,7 @@
       <div class="card">
         <div class="card-head">
           <h3>Interior Clean</h3>
-          <a href="https://web.detailconnect.app/u=draykes-mobile-detailing--KCKHCL" target="_blank" rel="noopener" class="card-cta card-cta-top">Book &rarr;</a>
+          <a href="#book" class="card-cta card-cta-top">Book &rarr;</a>
         </div>
         <div class="tagline">Clean. Fresh. Comfortable.</div>
         <div class="tier-pair">
@@ -658,7 +672,7 @@
       <div class="card">
         <div class="card-head">
           <h3>Full Detail</h3>
-          <a href="https://web.detailconnect.app/u=draykes-mobile-detailing--KCKHCL" target="_blank" rel="noopener" class="card-cta card-cta-top">Book &rarr;</a>
+          <a href="#book" class="card-cta card-cta-top">Book &rarr;</a>
         </div>
         <div class="tagline">Inside &amp; Out. Complete Care.</div>
         <div class="tier-pair">
@@ -688,7 +702,7 @@
       <div class="card">
         <div class="card-head">
           <h3>Paint Correction</h3>
-          <a href="https://web.detailconnect.app/u=draykes-mobile-detailing--KCKHCL" target="_blank" rel="noopener" class="card-cta card-cta-top">Book &rarr;</a>
+          <a href="#book" class="card-cta card-cta-top">Book &rarr;</a>
         </div>
         <div class="tagline">Swirls &amp; Scratches. Gone.</div>
         <div class="tier-pair">
@@ -736,7 +750,7 @@
     </div>
     <div class="portfolio-cta">
       <p>Ready to see yours look this good?</p>
-      <a href="https://web.detailconnect.app/u=draykes-mobile-detailing--KCKHCL" target="_blank" rel="noopener" class="btn btn-primary">Book Online →</a>
+      <a href="#book" class="btn btn-primary">Book Online →</a>
     </div>
   </div>
 </section>
@@ -751,6 +765,21 @@
         <p>No skipped steps. No rushed work. Just a truck rolling up to your driveway and leaving your ride looking like it just came off the lot.</p>
         <p>Mobile service — Drayke brings the shine to you at home or work.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="book" class="book">
+  <div class="container">
+    <div class="section-head">
+      <h2><span class="bar"></span>Book Online<span class="bar"></span></h2>
+      <p>Pick your service, add your vehicle, choose a time. Drayke confirms same-day.</p>
+    </div>
+    <div class="book-frame-wrap">
+      <iframe src="https://web.detailconnect.app/u=draykes-mobile-detailing--KCKHCL" title="Book with Drayke's Mobile Detailing" loading="lazy" allow="payment"></iframe>
+    </div>
+    <div class="book-fallback">
+      Booking window not loading? <a href="https://web.detailconnect.app/u=draykes-mobile-detailing--KCKHCL" target="_blank" rel="noopener">Open in a new tab &rarr;</a>
     </div>
   </div>
 </section>
@@ -789,15 +818,6 @@
     <div class="section-head">
       <h2><span class="bar"></span>Book Today<span class="bar"></span></h2>
       <p>Let us handle the dirt so you can enjoy the drive.<br>Book online in seconds — or call or text if you'd rather talk.</p>
-    </div>
-
-    <div style="max-width:900px;margin:0 auto 32px;text-align:center;background:var(--panel-2);border:1px solid var(--blue);border-radius:14px;padding:40px 32px;box-shadow:0 10px 40px rgba(46,122,255,0.15)">
-      <div style="display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid rgba(46,122,255,0.4);background:rgba(46,122,255,0.1);border-radius:999px;font-size:0.78rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--blue);margin-bottom:18px">
-        Fastest Way to Book
-      </div>
-      <h3 style="font-size:1.6rem;font-weight:800;margin-bottom:10px;color:#fff">Book online instantly</h3>
-      <p style="color:var(--muted);margin-bottom:24px">Pick your service and time — no phone tag required.</p>
-      <a href="https://web.detailconnect.app/u=draykes-mobile-detailing--KCKHCL" target="_blank" rel="noopener" class="btn btn-primary" style="padding:16px 40px;font-size:1.05rem">Book Online →</a>
     </div>
 
     <div class="contact-card">
